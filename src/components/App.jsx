@@ -12,7 +12,7 @@ function App() {
     setShowForm((showForm) => !showForm);
   }
 
-  // GET all toys
+  // GET all toys when the page loads
   useEffect(() => {
     fetch("http://localhost:3000/toys")
       .then((response) => response.json())
